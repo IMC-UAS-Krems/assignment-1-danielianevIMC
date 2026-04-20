@@ -7,15 +7,15 @@ Classes to implement:
   - Artist
 """
 class Artist:
-
-    def __init__(self, artist_id: str, name: str, genre: str):
+ 
+    def __init__(self, artist_id, name, genre):
         self.artist_id = artist_id
         self.name = name
         self.genre = genre
-        self.tracks = []  
-
+        self.tracks = []
+ 
     def add_track(self, track):
         self.tracks.append(track)
-
-    def track_count(self) -> int:
+ 
+    def track_count(self):
         return len(self.tracks)
